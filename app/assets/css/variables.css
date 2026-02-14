@@ -1,0 +1,49 @@
+:root {
+  /* Primary red scale (ฉ่ำตามที่กำหนด) */
+  --swc-red-50: #fdf2f2;
+  --swc-red-100: #fce7e7;
+  --swc-red-200: #f9caca;
+  --swc-red-300: #f2a0a0;
+  --swc-red-400: #e56c6d;
+  --swc-red-500: #d33f41;
+  --swc-red-600: #b4282b;
+  --swc-red-700: #8f1d20;
+  --swc-red-800: #771011;
+  --swc-red-900: #5a0c0d;
+
+  /* Gray scale */
+  --swc-gray-50: #f9fafb;
+  --swc-gray-100: #f3f4f6;
+  --swc-gray-200: #e5e7eb;
+  --swc-gray-300: #d1d5db;
+  --swc-gray-400: #9ca3af;
+  --swc-gray-500: #6b7280;
+  --swc-gray-600: #4b5563;
+  --swc-gray-700: #374151;
+  --swc-gray-800: #1f2937;
+  --swc-gray-900: #111827;
+
+  /* Text + white */
+  --swc-white: #ffffff;
+  --swc-text-dark: var(--swc-gray-800);
+  --swc-text-light: var(--swc-white);
+  --swc-text-muted: var(--swc-gray-600);
+  --swc-surface: var(--swc-gray-200);
+  --swc-surface-2: var(--swc-gray-100);
+  --swc-card: var(--swc-white);
+  --swc-border: #5a0c0d33;
+
+  /* Existing semantic aliases */
+  --swc-main-color: var(--swc-red-800);
+  --swc-accent-color: #2563eb;
+  --swc-text-color: var(--swc-text-dark);
+}
+
+[data-theme="dark"] {
+  --swc-text-color: #f3f4f6;
+  --swc-text-muted: #cbd5f5;
+  --swc-surface: #1f1b1b;
+  --swc-surface-2: #2a2222;
+  --swc-card: #221b1b;
+  --swc-border: #d33f4133;
+}
