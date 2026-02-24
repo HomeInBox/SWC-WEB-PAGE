@@ -1,5 +1,8 @@
 ﻿<template>
-  <footer class="border-t border-red-900/20 bg-linear-to-b from-red-900 via-red-800 to-red-900 text-white">
+  <footer
+    class="border-t text-(--swc-text-light)"
+    style="border-color: var(--swc-border); background: linear-gradient(to bottom, var(--swc-red-900), var(--swc-red-800), var(--swc-red-700));"
+  >
     <div class="container mx-auto px-4 py-10">
       <div class="grid gap-8 md:grid-cols-3">
         <section class="space-y-3" aria-labelledby="footer-company">
@@ -36,7 +39,7 @@
         </section>
       </div>
 
-      <div class="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-white/10 pt-4 text-xs text-white/75">
+      <div class="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-white/20 pt-4 text-xs text-white/75">
         <p>© {{ currentYear }} ศรีวิชัยโลหะกิจ (SWC). All rights reserved.</p>
         <p>Trusted Service. Quality First.</p>
       </div>
