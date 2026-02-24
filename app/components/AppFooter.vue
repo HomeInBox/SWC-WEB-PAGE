@@ -1,45 +1,49 @@
-<template>
-  <footer class="border-t border-red-900/20 bg-gradient-to-b from-red-900 via-red-800 to-red-900 text-white">
+﻿<template>
+  <footer class="border-t border-red-900/20 bg-linear-to-b from-red-900 via-red-800 to-red-900 text-white">
     <div class="container mx-auto px-4 py-10">
-      <div class="grid gap-6 md:grid-cols-3">
-        <div class="space-y-3">
-          <div class="text-lg font-semibold tracking-wide">SWC Company</div>
-          <p class="text-sm text-white/80">
-            เราให้บริการและดูแลด้วยมาตรฐานมืออาชีพ ใส่ใจคุณภาพในทุกขั้นตอน
+      <div class="grid gap-8 md:grid-cols-3">
+        <section class="space-y-3" aria-labelledby="footer-company">
+          <h2 id="footer-company" class="text-lg font-semibold tracking-wide">ศรีวิชัยโลหะกิจ (SWC)</h2>
+          <p class="text-sm leading-6 text-white/85">
+            จำหน่ายอุปกรณ์การชุบ ตู้ไฟชุบงานมือ 2 น้ำยาชุบนิกเกิลและทองแดง พร้อมโซลูชันโลหะชุบ
+            และอุปกรณ์โรงงานอุตสาหกรรม โดยทีมช่างและผู้มีประสบการณ์มากกว่า 20 ปี
           </p>
-        </div>
+        </section>
 
-        <div class="space-y-3">
-          <div class="text-sm font-semibold uppercase tracking-wider text-white/80">ติดต่อเรา</div>
-          <div class="space-y-2 text-sm">
-            <div class="flex items-center gap-2">
-              <span class="h-2 w-2 rounded-full bg-white/70"></span>
-              <span>Email: swc.service725@gmail.com</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="h-2 w-2 rounded-full bg-white/70"></span>
-              <span>Tel: 061-676-6837</span>
-            </div>
-          </div>
-        </div>
+        <section class="space-y-3" aria-labelledby="footer-services">
+          <h2 id="footer-services" class="text-sm font-semibold uppercase tracking-wider text-white/90">สินค้าและบริการ</h2>
+          <ul class="space-y-2 text-sm text-white/85">
+            <li>อุปกรณ์การชุบ และอะไหล่ตู้ไฟ</li>
+            <li>เครื่องดูดอากาศ เบรคเกอร์ และอุปกรณ์โรงงาน</li>
+            <li>ให้คำปรึกษาเปิดโรงชุบขนาดเล็กถึงขนาดใหญ่</li>
+          </ul>
+        </section>
 
-        <div class="space-y-3">
-          <div class="text-sm font-semibold uppercase tracking-wider text-white/80">เวลาทำการ</div>
-          <div class="text-sm text-white/80">
-            จันทร์ - เสาร์: 09:00 - 18:00
+        <section class="space-y-3" aria-labelledby="footer-contact">
+          <h2 id="footer-contact" class="text-sm font-semibold uppercase tracking-wider text-white/90">ติดต่อเรา</h2>
+          <div class="space-y-2 text-sm text-white/85">
+            <p>Email: swc.service725@gmail.com</p>
+            <p>Tel: 061-676-6837</p>
+            <a
+              href="https://www.facebook.com/swclohakit"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center text-white underline decoration-white/40 underline-offset-4 transition hover:decoration-white"
+            >
+              Facebook: ศรีวิชัยโลหะกิจ
+            </a>
           </div>
-          <div class="text-sm text-white/80">อาทิตย์: ปิดทำการ</div>
-        </div>
+        </section>
       </div>
 
-      <div
-        class="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-white/10 pt-4 text-xs text-white/70">
-        <div>© {{ new Date().getFullYear() }} SWC Company. All rights reserved.</div>
-        <div class="flex items-center gap-2">
-          <span class="h-1.5 w-1.5 rounded-full bg-white/60"></span>
-          <span>Trusted Service. Quality First.</span>
-        </div>
+      <div class="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-white/10 pt-4 text-xs text-white/75">
+        <p>© {{ currentYear }} ศรีวิชัยโลหะกิจ (SWC). All rights reserved.</p>
+        <p>Trusted Service. Quality First.</p>
       </div>
     </div>
   </footer>
 </template>
+
+<script setup lang="ts">
+const currentYear = useState("current-year", () => new Date().getFullYear());
+</script>
