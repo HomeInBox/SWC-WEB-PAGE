@@ -20,35 +20,35 @@
         <NuxtLink
           to="/"
           class="border-b-2 border-transparent pb-1 transition hover:border-(--swc-main-color) hover:text-(--swc-main-color)"
-          exact-active-class="border-(--swc-main-color) text-(--swc-main-color)"
+          exact-active-class="border-(--swc-main-color) text-(--swc-main-color) font-bold"
         >
           รู้จักพวกเรา
         </NuxtLink>
         <NuxtLink
           to="/portfolio"
           class="border-b-2 border-transparent pb-1 transition hover:border-(--swc-main-color) hover:text-(--swc-main-color)"
-          exact-active-class="border-(--swc-main-color) text-(--swc-main-color)"
+          exact-active-class="border-(--swc-main-color) text-(--swc-main-color) font-bold"
         >
           ผลงานของเรา
         </NuxtLink>
         <NuxtLink
           to="/products"
           class="border-b-2 border-transparent pb-1 transition hover:border-(--swc-main-color) hover:text-(--swc-main-color)"
-          exact-active-class="border-(--swc-main-color) text-(--swc-main-color)"
+          exact-active-class="border-(--swc-main-color) text-(--swc-main-color) font-bold"
         >
           สินค้าของเรา
         </NuxtLink>
         <NuxtLink
           to="/services"
           class="border-b-2 border-transparent pb-1 transition hover:border-(--swc-main-color) hover:text-(--swc-main-color)"
-          exact-active-class="border-(--swc-main-color) text-(--swc-main-color)"
+          exact-active-class="border-(--swc-main-color) text-(--swc-main-color) font-bold"
         >
           บริการ
         </NuxtLink>
         <NuxtLink
           to="/contact"
           class="border-b-2 border-transparent pb-1 transition hover:border-(--swc-main-color) hover:text-(--swc-main-color)"
-          exact-active-class="border-(--swc-main-color) text-(--swc-main-color)"
+          exact-active-class="border-(--swc-main-color) text-(--swc-main-color) font-bold"
         >
           ติดต่อ
         </NuxtLink>
