@@ -13,6 +13,24 @@
                     class="inset-0 object-cover w-full h-75" />
             </div>
         </div>
+        <div class="mt-5">
+            <div class="mx-auto mt-3 grid grid-cols-3 gap-4 px-4 sm:gap-6 sm:px-6 md:grid-cols-3 md:items-stretch">
+                <div v-for="value in images" :key="value"
+                    class="overflow-hidden rounded-xl border border-(--swc-border) bg-(--swc-surface)">
+                    <NuxtImg :src="value" alt="SWC Hero Background" class="inset-0 object-cover w-full h-100" />
+                </div>
+            </div>
+        </div>
     </div>
-
 </template>
+
+<script setup lang="ts">
+const images = ref<string[]>();
+onMounted(() => {
+    images.value = [
+        "/content2-400x400-1.jpg",
+        "/content2-400x400-2.jpg",
+        "/content2-400x400-5.jpg",
+    ];
+});
+</script>

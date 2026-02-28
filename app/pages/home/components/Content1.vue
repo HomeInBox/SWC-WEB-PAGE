@@ -27,7 +27,7 @@
                     <span class="mt-1 flex h-6 w-6 items-center justify-center text-(--swc-main-color)">
                         <Icon name="heroicons:check-circle" class="text-5xl" />
                     </span>
-                    คำนวณกระแสตามขนาดบ่อ
+                    คำนวณกระแสตามขนาดบ่อชุบและอุปกรณ์ที่ใช้
                 </li>
                 <li class="mx-5 mt-4 flex items-start gap-3 leading-7 text-(--swc-text-muted) sm:text-base">
                     <span class="mt-1 flex h-6 w-6 items-center justify-center text-(--swc-main-color)">

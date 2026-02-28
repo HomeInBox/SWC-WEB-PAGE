@@ -91,14 +91,5 @@
 </template>
 
 <script setup lang="ts">
-const isDark = ref(false);
-
-onMounted(() => {
-  isDark.value = document.documentElement.dataset.theme === "dark";
-});
-
-const toggleTheme = () => {
-  isDark.value = !isDark.value;
-  document.documentElement.dataset.theme = isDark.value ? "dark" : "light";
-};
+const { isDark, toggleTheme } = useTheme();
 </script>
